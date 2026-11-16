@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090d19">
+  <meta name="robots" content="noindex,nofollow">
+  <title>لوحة الإدارة | C.S MUDATHR MUSLIM</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="admin.css">
+  <script src="admin.js" defer></script>
+</head>
+<body>
+  <div class="glow one"></div><div class="glow two"></div>
+  <div class="layout">
+    <aside class="sidebar" aria-label="التنقل في لوحة الإدارة">
+      <div class="logo"><div class="logo-icon">✦</div><div><strong>C.S <span>MUDATHR</span></strong><small>MUSLIM • CONTROL CENTER</small></div></div>
+      <div class="side-note">لوحة الإدارة الخاصة بالموقع</div>
+      <nav class="side-nav" id="navigation">
+        <button type="button" class="nav-item active" data-panel="content">✎ <span>النصوص والعناوين</span></button>
+        <button type="button" class="nav-item" data-panel="design">◈ <span>التصميم والألوان</span></button>
+        <button type="button" class="nav-item" data-panel="media">▧ <span>الصور والشعار</span></button>
+        <button type="button" class="nav-item" data-panel="download">↓ <span>تحميل التطبيق</span></button>
+        <button type="button" class="nav-item" data-panel="visibility">☷ <span>الأقسام والإعلانات</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <a href="./" target="_blank" rel="noopener">↗ عرض الموقع</a>
+        <a href="https://github.com/MUDATHR/cs-mudathr-muslim" target="_blank" rel="noopener">↗ المستودع</a>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div><span class="eyebrow">C.S MUDATHR MUSLIM</span><h1>لوحة التحكم الشاملة <span>✦</span></h1><p>عدّل موقعك من الموبايل أو الحاسبة، بدون كتابة كود.</p></div><span class="status-pill" id="connect-state"><i></i> غير متصل</span></header>
+      <section id="login" class="login-card">
+        <div class="login-icon">🔐</div>
+        <div class="login-content"><h2>ربط آمن بحسابك على GitHub</h2><p>موقعك مستضاف مجاناً على GitHub Pages. لتعديل ملفاته من الموبايل، تحتاج رمز وصول خاص بالمستودع؛ <b>ما نخزّن الرمز في الموقع أو المتصفح</b>، ويبقى في الذاكرة إلى أن تغلق الصفحة.</p>
+          <div class="guide"><b>مرة واحدة لإنشاء الرمز:</b><span>افتح GitHub وأنشئ <strong>Fine-grained token</strong>، واختار <strong>Only select repositories → cs-mudathr-muslim</strong>، وخلي صلاحية <strong>Contents: Read and write</strong> فقط. حدّد مدة انتهاء قصيرة.</span><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">إنشاء رمز وصول في GitHub ←</a></div>
+          <form id="login-form" autocomplete="off"><label for="token">رمز الوصول (GitHub token)</label><div class="input-row"><input type="password" id="token" autocomplete="off" spellcheck="false" placeholder="github_pat_..." required><button type="submit" class="primary" id="login-btn">ربط حسابي</button></div></form>
+          <p class="warning">⚠️ لا تشارك الرمز بأي شخص، ولا تدخله إلا على رابط موقعك الصحيح. لوحة الإدارة عامة للعرض، لكن الحفظ محصور بمن يملك صلاحية GitHub.</p>
+        </div>
+      </section>
+      <div id="workspace" hidden>
+        <div class="actions-bar"><div class="state"><span class="online-dot"></span> <span id="account-name">متصل</span><small id="dirty-state">التغييرات محفوظة</small></div><div class="action-buttons"><button class="subtle" type="button" id="refresh-btn">↻ تحديث</button><button class="subtle" type="button" id="logout-btn">تسجيل خروج</button><button class="primary" type="button" id="save-btn">☁ حفظ ونشر التعديلات</button></div></div>
+        <section class="panel active" id="panel-content"><div class="panel-header"><div><span class="mini-label">01 / تحرير المحتوى</span><h2>النصوص والعناوين</h2><p>كل تغيير يظهر على الموقع بعد الضغط على «حفظ ونشر».</p></div><span class="header-icon">✎</span></div><div id="text-fields" class="field-groups"></div></section>
+        <section class="panel" id="panel-design"><div class="panel-header"><div><span class="mini-label">02 / الهوية البصرية</span><h2>الألوان والتصميم</h2><p>غيّر هوية موقعك من غير التأثير على تطبيق مسلم مراد.</p></div><span class="header-icon">◈</span></div><div id="theme-fields" class="color-grid"></div><div class="tip">التغييرات على الموقع فقط؛ لا تغيّر ألوان تطبيق Android.</div></section>
+        <section class="panel" id="panel-media"><div class="panel-header"><div><span class="mini-label">03 / الوسائط</span><h2>الصور والشعار</h2><p>اختار صورة من الموبايل وارفـعها للموقع مباشرة.</p></div><span class="header-icon">▧</span></div><div class="media-grid"><div class="media-card"><div class="media-preview"><img id="logo-preview" src="assets/murad-logo.webp" alt="شعار الموقع الحالي"></div><h3>شعار تطبيق مسلم مراد</h3><label class="upload-btn" for="logo-file">اختيار صورة جديدة</label><input type="file" accept="image/png,image/jpeg,image/webp" id="logo-file"><button class="subtle upload-action" type="button" data-media="logo">رفع الشعار للموقع</button></div><div class="media-card"><div class="media-preview portrait"><img id="screenshot-preview" src="assets/app-screen.webp" alt="صورة التطبيق الحالية"></div><h3>صورة واجهة التطبيق</h3><label class="upload-btn" for="screenshot-file">اختيار صورة جديدة</label><input type="file" accept="image/png,image/jpeg,image/webp" id="screenshot-file"><button class="subtle upload-action" type="button" data-media="screenshot">رفع صورة التطبيق</button></div></div><div class="tip">ارفع الصورة ثم اضغط «حفظ ونشر» بالأعلى. الملفات تُرفع إلى مستودعك، ولا تُرسل إلى أي خدمة خارج GitHub.</div></section>
+        <section class="panel" id="panel-download"><div class="panel-header"><div><span class="mini-label">04 / تنزيلات التطبيق</span><h2>إدارة زر التحميل</h2><p>غيّر الرابط إلى إصدار APK منشور وموثوق على GitHub.</p></div><span class="header-icon">↓</span></div><label class="full-label" for="apk-url">رابط تحميل APK</label><input id="apk-url" type="url" dir="ltr" spellcheck="false" placeholder="https://github.com/MUDATHR/.../releases/latest/download/Muslim_Murad.apk"><p class="help">لا يفعّل هذا الحقل رفع APK؛ لازم ترفع نسخة موقّعة بمفتاح نشر دائم إلى GitHub Releases قبل وضع الرابط هنا.</p><div class="quick"><a href="https://github.com/MUDATHR/cs-mudathr-muslim/releases" target="_blank" rel="noopener">فتح إصدارات التطبيق ↗</a></div></section>
+        <section class="panel" id="panel-visibility"><div class="panel-header"><div><span class="mini-label">05 / ترتيب الظهور</span><h2>إظهار وإخفاء الأقسام</h2><p>أخفي أي قسم من واجهة الموقع مؤقتاً، وارجعه بأي وقت.</p></div><span class="header-icon">☷</span></div><div id="visibility-fields" class="switch-grid"></div><div class="tip">إخفاء قسم التحميل يخفيه من الصفحة فقط، ولا يمسح APK من GitHub.</div></section>
+        <section class="preview-section"><div><span class="mini-label">معاينة فورية للعناوين</span><h2 id="live-headline">تجربة استماع ومشاهدة</h2><p id="live-subheadline">تليق بالقصيدة الحسينية.</p></div><div class="preview-buttons"><a href="./" target="_blank" rel="noopener" class="subtle link-button">فتح الموقع ↗</a><button type="button" id="reset-btn" class="subtle danger">استعادة النصوص الافتراضية</button></div></section>
+      </div>
+      <p id="message" role="status" aria-live="polite"></p>
+      <footer class="admin-footer"><span>© C.S MUDATHR MUSLIM</span><span>لوحة تحكم مستقلة — GitHub Pages</span></footer>
+    </main>
+  </div>
+</body>
+</html>
