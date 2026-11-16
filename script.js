@@ -15,3 +15,6 @@
   const project=typeof window.MURAD_PROJECT_URL==='string'?window.MURAD_PROJECT_URL.trim():'';
   if(/^https:\/\/github\.com\/[\w-]+\/[\w.-]+$/.test(project)){const link=document.getElementById('project-link');if(link){link.href=project;link.target='_blank';link.rel='noopener noreferrer';}}
 })();
+
+/* CS_MUDATHR_ADMIN_BOOTSTRAP_V1 */
+(function () { var s = document.createElement('script'); s.src = 'assets/site-content.js'; document.head.appendChild(s); })();
