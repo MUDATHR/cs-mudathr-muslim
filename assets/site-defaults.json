@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "text": {
+    "eyebrow": "منصة تقنية مستقلة · التطبيق متاح مجاناً",
+    "heroTitle": "تجربة استماع ومشاهدة",
+    "heroHighlight": "تليق بالقصيدة الحسينية.",
+    "heroDescription": "مرحباً بك في الموقع الرسمي لمنصة C.S MUDATHR MUSLIM. هنا تتعرّف على تطبيق مسلم مراد وتحصل على أحدث نسخة للأندرويد مجاناً.",
+    "heroSecondaryButton": "استكشف المميزات",
+    "heroDownloadButton": "تحميل للأندرويد مجاناً",
+    "downloadNav": "حمّل التطبيق",
+    "microNote": "بدون رسوم تحميل · لأجهزة Android",
+    "aboutTitle": "القصائد اللي تحبها،",
+    "aboutHighlight": "بمكان واحد.",
+    "aboutIntro": "تصميم عربي بهوية أنيقة، وتجربة بسيطة للوصول إلى القصائد والفيديوهات بدون تعقيد.",
+    "aboutDetailTitle": "هوية أصيلة.",
+    "aboutDetailHighlight": "واجهة حديثة.",
+    "aboutDescription": "تصفّح مكتبة فيديوهات القصائد، وابحث عن القصيدة اللي تريدها، وانتقل بين المجلات المخصصة للمحتوى الحسيني. التصفّح والمشاهدة بدون حساب، والتسجيل مطلوب للتفاعل مثل الإعجاب والتعليق.",
+    "featuresTitle": "تفاصيل صغيرة.",
+    "featuresHighlight": "فرق كبير بالتجربة.",
+    "feature1Title": "مكتبة قصائد الفيديو",
+    "feature1Description": "فيديوهات مرتبة ضمن مجلات حسينية، مع عناوين وصور توضيحية لكل قصيدة.",
+    "feature2Title": "بحث سهل وسريع",
+    "feature2Description": "ابحث عن القصائد من داخل المكتبة والمجلات بدون خطوات معقدة.",
+    "feature3Title": "المفضلة والتفاعل",
+    "feature3Description": "احتفظ بالمحتوى المحبب إلك، وسجّل الدخول عند الحاجة للإعجاب والتعليق.",
+    "feature4Title": "محتوى يتجدد",
+    "feature4Description": "القصائد الجديدة تظهر عبر النظام الإداري من غير الحاجة لتحديث التطبيق لكل منشور.",
+    "downloadTitle": "خلّ القصائد",
+    "downloadHighlight": "أقرب إلك.",
+    "downloadDescription": "حمّل تطبيق مسلم مراد الآن مجاناً على جهاز Android. احصل على ملف APK الأصلي من صفحة الإصدار الرسمية.",
+    "downloadBadge": "مجاني تماماً",
+    "footerDescription": "منصة مستقلة لنشر تطبيقات ومشاريع تقنية. تطبيق مسلم مراد — مكتبة قصائد حسينية.",
+    "faqTitle": "كلشي تحتاج تعرفه.",
+    "announcement": "",
+    "availabilityMessage": "ملف التحميل يصبح متاحاً عند رفع أول إصدار رسمي."
+  },
+  "theme": {
+    "background": "#090d19",
+    "gold": "#ecc87d",
+    "cyan": "#6fcef1"
+  },
+  "visibility": {
+    "about": true,
+    "features": true,
+    "download": true,
+    "faq": true,
+    "announcement": false
+  },
+  "images": {
+    "logo": "assets/murad-logo.webp",
+    "screenshot": "assets/app-screen.webp"
+  },
+  "downloadUrl": ""
+}
