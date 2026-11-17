@@ -2,7 +2,7 @@
 (function(){
   const year=document.getElementById('year');if(year)year.textContent=new Date().getFullYear();
   const url=typeof window.MURAD_DOWNLOAD_URL==='string'?window.MURAD_DOWNLOAD_URL.trim():'';
-  const available=/^https:\/\/github\.com\/[A-Za-z0-9-]+\/[A-Za-z0-9_.-]+\/releases\/latest\/download\/Muslim_Murad\.apk$/.test(url);
+  const available=/^https:\/\/github\.com\/[A-Za-z0-9-]+\/[A-Za-z0-9_.-]+\/releases\/latest\/download\/Muslim_Murad(?:_ARM64|_ARM32|_x86_64)?\.apk$/.test(url);
   document.querySelectorAll('a.download-link').forEach(el=>{
     if(available){el.href=url;el.setAttribute('rel','noopener noreferrer');el.setAttribute('aria-label','تنزيل تطبيق مسلم مراد APK');}
     else{el.href='#download';if(el.id==='download-android'){el.setAttribute('aria-disabled','true');el.classList.add('not-yet');el.addEventListener('click',evt=>evt.preventDefault());}}
